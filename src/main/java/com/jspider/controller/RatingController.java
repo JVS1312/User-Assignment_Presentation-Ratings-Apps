@@ -36,5 +36,7 @@ public class RatingController {
 	@GetMapping("/student/{studentId}")
 	public ResponseEntity<ResponseStructure<List<RatingDTO>>> getAllRatingsByStudentId(@PathVariable Integer studentId) {
 		return ratingService.getAllRatingsByStudentId(studentId);
+		
+		
 	}
 }
